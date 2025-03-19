@@ -1,6 +1,7 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
+	content: ["nuxt.config.ts"],
 	theme: {
 		extend: {
 			colors: {

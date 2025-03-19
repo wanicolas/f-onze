@@ -1,14 +1,13 @@
 <template>
-	<Body class="text-dark dark:text-light bg-light dark:bg-dark">
+	<Body
+		class="text-pretty bg-light px-4 text-dark md:px-12 dark:bg-dark dark:text-light"
+	>
 		<div
-			id="innerCursor"
 			aria-hidden="true"
-			class="bg-dark dark:bg-light pointer-events-none absolute z-[9998] size-6 -translate-x-1/2 -translate-y-1/2 rounded-full"
+			class="pointer-events-none absolute z-[9999] size-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent"
 			:style="{ left: cursorPosition.x + 'px', top: cursorPosition.y + 'px' }"
 		/>
-		<header
-			class="mx-4 my-6 flex items-center justify-between md:mx-12 md:my-8"
-		>
+		<header class="my-6 flex items-center justify-between md:my-8">
 			<NuxtLink to="/">
 				<span class="sr-only">Accueil</span>
 				<svg
@@ -57,9 +56,9 @@
 				</svg>
 			</NuxtLink>
 			<nav class="flex items-center gap-6 md:gap-10 md:text-xl">
-				<NuxtLink to="/projets">Projets</NuxtLink>
-				<NuxtLink to="/lab">Lab</NuxtLink>
-				<NuxtLink to="/a-propos">À propos</NuxtLink>
+				<NuxtLink to="/projets" class="hover:text-accent">Projets</NuxtLink>
+				<NuxtLink to="/lab" class="hover:text-accent">Lab</NuxtLink>
+				<NuxtLink to="/a-propos" class="hover:text-accent">À propos</NuxtLink>
 				<button @click="toggleColorMode">
 					<svg
 						class="fill-dark dark:fill-light"
@@ -77,15 +76,17 @@
 			</nav>
 		</header>
 
-		<NuxtPage />
+		<main id="main" class="my-16 flex flex-1 md:my-20">
+			<NuxtPage />
+		</main>
 
-		<footer class="md:mx-12">
+		<footer class="my-6 md:my-8">
 			<div
-				class="flex flex-col items-center gap-7 text-xl font-semibold md:mb-12 md:flex-row md:justify-between"
+				class="flex flex-col items-center gap-5 text-xl font-semibold md:mb-12 md:flex-row md:justify-between md:gap-7"
 			>
 				<NuxtLink
 					to="/contact"
-					class="text-accent text-5xl transition-all hover:scale-110"
+					class="text-4xl text-accent transition-all hover:scale-110 md:text-5xl"
 				>
 					On <br class="hidden md:inline" />
 					cause ?
@@ -98,20 +99,20 @@
 				</div>
 			</div>
 			<div
-				class="border-dark dark:border-light m-4 flex flex-col items-center gap-2 border-t pt-4 md:flex-row md:justify-between"
+				class="m-4 flex flex-col items-center gap-2 border-t border-dark pt-4 md:flex-row md:justify-between dark:border-light"
 			>
 				<div
-					class="flex flex-col items-center gap-3 md:flex-row-reverse md:gap-6"
+					class="flex flex-col items-center gap-1 md:flex-row-reverse md:gap-6"
 				>
 					<NuxtLink to="/mentions-legales">Mentions légales</NuxtLink>
 					<div
 						aria-hidden="true"
-						class="bg-dark dark:bg-light hidden size-2 rounded-full md:block"
+						class="hidden size-2 rounded-full bg-dark md:block dark:bg-light"
 					/>
 					<NuxtLink to="/contact">Contact</NuxtLink>
 					<div
 						aria-hidden="true"
-						class="bg-dark dark:bg-light hidden size-2 rounded-full md:block"
+						class="hidden size-2 rounded-full bg-dark md:block dark:bg-light"
 					/>
 					<span class="text-xs md:text-base">
 						©{{ new Date().getFullYear() }} Tous droits réservés - F/ONZE
