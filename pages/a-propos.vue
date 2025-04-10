@@ -1,10 +1,10 @@
 <template>
-	<div class="m-auto max-w-5xl flex-1">
-		<h1 class="mb-5 text-xl font-semibold md:text-2xl">
+	<div class="mx-auto max-w-5xl">
+		<h1 class="mb-5 text-xl font-semibold md:text-3xl">
 			Association de production
 			<span class="font-accent text-accent">audiovisuelle</span>
 		</h1>
-		<p>
+		<p class="text-lg md:text-xl">
 			Chez F/ONZE, chaque projet devient une
 			<span class="font-accent">aventure</span>, chaque création une
 			<span class="font-accent">exploration</span>. Grâce à notre expertise en

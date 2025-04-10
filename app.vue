@@ -76,7 +76,7 @@
 			</nav>
 		</header>
 
-		<main id="main" class="my-16 flex flex-1 md:my-20">
+		<main id="main" class="my-16 flex-1 md:my-20">
 			<NuxtPage />
 		</main>
 

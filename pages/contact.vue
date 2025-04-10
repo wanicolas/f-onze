@@ -7,7 +7,7 @@
 				Et si on
 				<span class="font-accent text-accent">discutait</span> ?
 			</h1>
-			<p>Promis, on tachera de vous répondre au plus vite !</p>
+			<p>Promis, on essayera de te répondre au plus vite !</p>
 		</div>
 		<form class="flex flex-1 flex-col gap-3">
 			<Input label="Nom complet" placeholder="Jean Dupont" />
