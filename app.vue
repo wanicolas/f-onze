@@ -4,9 +4,21 @@
 	>
 		<div
 			aria-hidden="true"
-			class="pointer-events-none absolute z-[9999] size-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent"
+			class="pointer-events-none absolute z-[9999] -translate-x-1/2 -translate-y-1/2"
 			:style="{ left: cursorPosition.x + 'px', top: cursorPosition.y + 'px' }"
-		/>
+		>
+			<div
+				class="size-6 rounded-full bg-accent"
+				:class="showOpen && 'hidden'"
+			></div>
+			<div
+				class="font-accent !text-5xl text-accent"
+				:class="!showOpen && 'hidden'"
+			>
+				Ouvrir
+			</div>
+		</div>
+
 		<header class="my-6 flex items-center justify-between md:my-8">
 			<NuxtLink to="/">
 				<span class="sr-only">Accueil</span>
@@ -76,8 +88,14 @@
 			</nav>
 		</header>
 
-		<main id="main" class="my-16 flex-1 md:my-20">
-			<NuxtPage />
+		<main
+			id="main"
+			class="my-16 w-full flex-1 md:my-20 2xl:mx-auto 2xl:max-w-screen-2xl"
+		>
+			<NuxtPage
+				@cursor-hovered="showOpen = true"
+				@cursor-left="showOpen = false"
+			/>
 		</main>
 
 		<footer class="my-6 md:my-8">
@@ -149,11 +167,11 @@ const toggleColorMode = () => {
 
 const cursorPosition = ref({ x: -200, y: -200 });
 
-const isHovered = ref(false);
+const showOpen = ref(false);
 
 onMounted(() => {
 	// Add an event listener for mousemove event
-	if (window.innerWidth > 1200) {
+	if (window.innerWidth > 1024) {
 		document.addEventListener("pointermove", (e) => {
 			cursorPosition.value = { x: e.pageX, y: e.pageY };
 		});

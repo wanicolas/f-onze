@@ -1,0 +1,10 @@
+[
+	{
+		"title": "Project 1",
+		"client": "Client",
+		"name": "projet1",
+		"img": "https://www.photographiesdelannee.com/wp-content/uploads/2021/06/photographie-we-june.jpg",
+		"video": "https://www.youtube.com/watch?v=example1",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	}
+]
