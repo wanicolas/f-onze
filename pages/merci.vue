@@ -1,4 +1,5 @@
 <template>
-	Votre message a bien été envoyé !<br />
-	Merci de nous avoir contacté, nous vous répondrons dès que possible.
+	Ton message a bien été envoyé !<br />
+	On esseyera de te répondre le plus vite possible, c'est promis ! PS : le
+	week-end en revanche on dort, tu nous en voudra pas j'espère.
 </template>

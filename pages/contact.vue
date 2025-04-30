@@ -47,7 +47,11 @@
 			>
 				Envoyer
 			</button>
-			<input type="hidden" name="_next" value="/merci" />
+			<input
+				type="hidden"
+				name="_next"
+				value="https://f-onze.vercel.app/merci"
+			/>
 		</form>
 	</div>
 </template>

@@ -107,10 +107,18 @@
 					cause ?
 				</NuxtLink>
 				<div class="flex flex-col items-center gap-1">
-					<NuxtLink to="/">Instagram</NuxtLink>
-					<NuxtLink to="/">Youtube</NuxtLink>
-					<NuxtLink to="/">Linkedin</NuxtLink>
-					<NuxtLink to="/">Tiktok</NuxtLink>
+					<NuxtLink to="https://www.instagram.com/f11.prod/">
+						Instagram
+					</NuxtLink>
+					<NuxtLink
+						to="https://www.youtube.com/channel/UCxBTaRCwMFDKCuQxPpCKgPQ"
+					>
+						Youtube
+					</NuxtLink>
+					<NuxtLink to="https://www.linkedin.com/in/f-onze-prod-848992339/">
+						Linkedin
+					</NuxtLink>
+					<NuxtLink to="https://www.tiktok.com/@f11.prod">Tiktok</NuxtLink>
 				</div>
 			</div>
 			<div
