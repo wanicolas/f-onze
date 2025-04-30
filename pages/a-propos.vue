@@ -35,7 +35,9 @@
 					class="mb-2 aspect-[3/4] rounded object-cover"
 				/>
 				<figcaption>
-					<p class="absolute left-4 top-2 font-accent !text-4xl font-semibold">
+					<p
+						class="absolute left-4 top-2 font-accent !text-4xl font-semibold text-white"
+					>
 						{{ member.firstname }}
 					</p>
 					<p class="text-lg">{{ member.role }}</p>
