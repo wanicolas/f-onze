@@ -9,8 +9,10 @@
 			</h1>
 			<p>Promis, on essayera de te répondre au plus vite !</p>
 		</div>
+
+		<!-- Hidden email by the randomized string given by formsubmit -->
 		<form
-			action="https://formsubmit.co/f11communication.team@gmail.com"
+			action="https://formsubmit.co/d4044528eb35eb923ddf4d1b9c15ec09"
 			method="POST"
 			class="flex-1 space-y-3"
 		>
@@ -29,7 +31,7 @@
 			<Input
 				required
 				label="Sujet"
-				name="Sujet"
+				name="_subject"
 				placeholder="Idée de collaboration"
 			/>
 			<Input label="Téléphone" placeholder="07 00 00 00 00" />
@@ -38,7 +40,7 @@
 				type="textarea"
 				rows="3"
 				label="Message"
-				name="Message"
+				name="message"
 				placeholder="Hey, je voulais vous parler de mon projet..."
 			/>
 			<button
@@ -47,10 +49,18 @@
 			>
 				Envoyer
 			</button>
+
+			<!-- Hidden input used by formsubmit.co -->
+			<!-- See full documentation at https://formsubmit.co/documentation -->
 			<input
 				type="hidden"
 				name="_next"
 				value="https://f-onze.vercel.app/merci"
+			/>
+			<input
+				type="hidden"
+				name="_autoresponse"
+				value="Ton message a bien été envoyé ! On esseyera de te répondre le plus vite possible, c'est promis ! PS : le week-end en revanche on dort, tu nous en voudra pas j'espère."
 			/>
 		</form>
 	</div>
