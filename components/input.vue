@@ -4,15 +4,16 @@
 			:for="id"
 			class="mb-2 block text-sm font-medium text-dark dark:text-white"
 		>
-			{{ label }}
+			{{ label }}{{ required ? "*" : null }}
 		</label>
 		<component
 			:is="type == 'textarea' ? 'textarea' : 'input'"
 			type="text"
 			:id="id"
-			class="block w-full rounded-lg border-2 border-dark bg-transparent p-2.5 text-sm text-dark placeholder-gray-500 ring-dark focus:ring dark:border-light dark:text-white dark:placeholder-gray-400 dark:ring-light"
+			:rows="type == 'textarea' ? 4 : null"
+			class="block w-full rounded-lg border-2 border-dark bg-transparent p-2.5 text-sm text-dark placeholder-gray-500 ring-dark focus:outline-none focus:ring-1 focus:ring-offset-0 dark:border-light dark:text-white dark:placeholder-gray-400 dark:ring-light"
 			:placeholder="placeholder"
-			required
+			:required="required"
 		/>
 	</div>
 </template>
@@ -29,6 +30,10 @@ defineProps({
 	type: {
 		type: String,
 		default: "input",
+	},
+	required: {
+		type: Boolean,
+		default: false,
 	},
 });
 
