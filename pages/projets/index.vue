@@ -3,8 +3,8 @@
 		<div class="mb-8 flex h-fit w-full items-center gap-6">
 			<h1 class="text-xl">Projets</h1>
 			<div
-				class="to- h-px w-full bg-gradient-to-r from-dark to-accent dark:from-white dark:to-accent"
-			></div>
+				class="h-px w-full bg-gradient-to-r from-dark to-accent dark:from-white dark:to-accent"
+			/>
 		</div>
 		<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 			<NuxtLink
@@ -13,17 +13,18 @@
 				:to="'projets/' + project.name"
 				@mouseover="$emit('cursor-hovered')"
 				@mouseleave="$emit('cursor-left')"
-				class="group relative h-[25rem] overflow-hidden rounded-lg"
+				class="group relative h-[25rem] overflow-hidden rounded"
 				:class="
 					shouldApplyTestClass(index)
-						? 'lg:col-span-2 lg:row-span-2 lg:h-auto'
+						? 'lg:col-span-2 lg:row-span-2 lg:h-[41rem]'
 						: 'lg:h-80'
 				"
 			>
 				<img
 					:src="project.img"
 					alt=""
-					class="object-cover transition-all duration-500 group-hover:scale-110"
+					loading="lazy"
+					class="size-full object-cover transition-all duration-500 group-hover:scale-110"
 				/>
 				<div class="absolute bottom-6 left-6">
 					<div class="h-9 overflow-hidden">

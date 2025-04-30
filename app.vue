@@ -88,10 +88,7 @@
 			</nav>
 		</header>
 
-		<main
-			id="main"
-			class="my-16 w-full flex-1 md:my-20 2xl:mx-auto 2xl:max-w-screen-2xl"
-		>
+		<main id="main" class="my-16 w-full flex-1 md:my-20">
 			<NuxtPage
 				@cursor-hovered="showOpen = true"
 				@cursor-left="showOpen = false"

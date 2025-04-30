@@ -1,10 +1,10 @@
 <template>
 	<div class="mx-auto max-w-5xl">
-		<h1 class="mb-5 text-xl font-semibold md:text-3xl">
+		<h1 class="mb-5 text-2xl font-semibold md:text-3xl">
 			Association de production
 			<span class="font-accent text-accent">audiovisuelle</span>
 		</h1>
-		<p class="text-lg md:text-xl">
+		<p class="mb-20 text-lg md:text-xl">
 			Chez F/ONZE, chaque projet devient une
 			<span class="font-accent">aventure</span>, chaque création une
 			<span class="font-accent">exploration</span>. Grâce à notre expertise en
@@ -17,5 +17,34 @@
 			invitant chacun à plonger dans des mondes où innovation technologique et
 			expression artistique se rencontrent pour susciter émotions et réflexions.
 		</p>
+
+		<div class="mb-8 flex h-fit w-full items-center gap-6">
+			<h2 class="shrink-0 text-2xl font-medium">L'équipe F-ONZE au complet</h2>
+			<div
+				class="h-px w-full bg-gradient-to-r from-dark to-accent dark:from-white dark:to-accent"
+			/>
+		</div>
+
+		<div
+			class="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"
+		>
+			<figure v-for="(member, index) in members" :key="index" class="relative">
+				<img
+					:src="'img/members/solo/' + member.img"
+					alt=""
+					class="mb-2 aspect-[3/4] rounded object-cover"
+				/>
+				<figcaption>
+					<p class="absolute left-4 top-2 font-accent !text-4xl font-semibold">
+						{{ member.firstname }}
+					</p>
+					<p class="text-lg">{{ member.role }}</p>
+				</figcaption>
+			</figure>
+		</div>
 	</div>
 </template>
+
+<script setup>
+import members from "~/assets/members.json";
+</script>

@@ -25,16 +25,21 @@
 			<div class="flex w-full items-center gap-6">
 				<h2 class="text-xl">Galerie</h2>
 				<div
-					class="to- h-px w-full bg-gradient-to-r from-dark to-accent dark:from-white dark:to-accent"
-				></div>
+					class="h-px w-full bg-gradient-to-r from-dark to-accent dark:from-white dark:to-accent"
+				/>
 			</div>
 
+			<div class="grid grid-cols-2 gap-4">
+				<img class="size-full object-cover" :src="picture[1].src" alt="" />
+				<img class="size-full object-cover" :src="picture[2].src" alt="" />
+			</div>
 			<img
-				v-for="(picture, index) in project.pictures"
-				:key="index"
-				:src="picture.src"
+				class="aspect-video w-full object-cover"
+				:src="picture[0].src"
 				alt=""
 			/>
+
+			<div v-html="project.description" class="mt-10"></div>
 		</div>
 	</div>
 </template>

@@ -1,0 +1,47 @@
+[
+	{
+		"firstname": "Emanuel",
+		"role": "Chef de projet / Réalisateur",
+		"img": "emanuel.webp"
+	},
+	{
+		"firstname": "Cléo",
+		"role": "Modélisation 3D / Animation 2D",
+		"img": "cleo.webp"
+	},
+	{
+		"firstname": "Ethan",
+		"role": " Direction artistique / Photographe",
+		"img": "ethan.webp"
+	},
+	{
+		"firstname": "Sandra",
+		"role": "Scénariste / Monteuse / Cadreuse",
+		"img": "sandra.webp"
+	},
+	{
+		"firstname": "Valentin",
+		"role": "Cadreur / Monteur / Scénariste",
+		"img": "valentin.webp"
+	},
+	{
+		"firstname": "Gaelle",
+		"role": "Communication / Marketing",
+		"img": "gaelle.webp"
+	},
+	{
+		"firstname": "Charlie",
+		"role": "Ingénieur son / Responsable Matériel",
+		"img": "charlie.webp"
+	},
+	{
+		"firstname": "Mathilde",
+		"role": "Scénariste / Monteuse / Cadreuse",
+		"img": "mathilde.webp"
+	},
+	{
+		"firstname": "Nicolas",
+		"role": "Développeur web",
+		"img": "nicolas.webp"
+	}
+]

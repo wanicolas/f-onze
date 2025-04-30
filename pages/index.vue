@@ -13,5 +13,7 @@
 		création traditionnelle, en invitant chacun à plonger dans des mondes où
 		innovation technologique et expression artistique se rencontrent pour
 		susciter émotions et réflexions.
+
+		<img src="/img/members/groupe.webp" alt="" />
 	</div>
 </template>
