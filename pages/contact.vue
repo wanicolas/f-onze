@@ -34,7 +34,7 @@
 				name="_subject"
 				placeholder="Idée de collaboration"
 			/>
-			<Input label="Téléphone" placeholder="07 00 00 00 00" />
+			<Input label="Téléphone" name="phone" placeholder="07 00 00 00 00" />
 			<Input
 				required
 				type="textarea"
