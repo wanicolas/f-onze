@@ -19,7 +19,7 @@
 		</p>
 
 		<div class="mb-8 flex h-fit w-full items-center gap-6">
-			<h2 class="shrink-0 text-2xl font-medium">L'équipe F-ONZE au complet</h2>
+			<h2 class="shrink-0 text-2xl font-medium">L'équipe au complet</h2>
 			<div
 				class="h-px w-full bg-gradient-to-r from-dark to-accent dark:from-white dark:to-accent"
 			/>

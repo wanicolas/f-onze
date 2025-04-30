@@ -1,5 +1,5 @@
 <template>
-	<div class="prose dark:prose-invert max-w-5xl">
+	<div class="prose max-w-5xl dark:prose-invert">
 		<h1>Mentions légales</h1>
 
 		<h2>1. Présentation de l'association</h2>
@@ -8,10 +8,10 @@
 			production de clips vidéos pour artistes musicaux.
 		</p>
 		<p>
-			<strong>Adresse :</strong> Ynov campus Strasbourg,16 rue de Leiceste, 67
+			<strong>Adresse :</strong> Ynov campus Strasbourg, 16 rue de Leiceste, 67
 			000 Strasbourg
 		</p>
-		<p><strong>Email :</strong> contact@f-onze.fr</p>
+		<p><strong>Email :</strong> f11communication.team@gmail.com</p>
 
 		<h2>2. Direction de la publication</h2>
 		<p>
@@ -58,7 +58,7 @@
 			Conformément à la loi, vous disposez d'un droit d'accès, de rectification,
 			de suppression et d'opposition concernant les données vous concernant.
 			Pour exercer ce droit, veuillez nous contacter par email à l'adresse
-			suivante : [email pour les droits RGPD].
+			suivante : f11communication.team@gmail.com.
 		</p>
 
 		<h2>6. Cookies</h2>
