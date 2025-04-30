@@ -9,16 +9,36 @@
 			</h1>
 			<p>Promis, on essayera de te répondre au plus vite !</p>
 		</div>
-		<form class="flex-1 space-y-3">
-			<Input required label="Nom complet" placeholder="Jean Dupont" />
-			<Input required label="Email" placeholder="jeandupont@mail.fr" />
-			<Input required label="Sujet" placeholder="Idée de collaboration" />
+		<form
+			action="https://formsubmit.co/f11communication.team@gmail.com"
+			method="POST"
+			class="flex-1 space-y-3"
+		>
+			<Input
+				required
+				label="Nom complet"
+				name="name"
+				placeholder="Jean Dupont"
+			/>
+			<Input
+				required
+				label="Email"
+				name="email"
+				placeholder="jeandupont@mail.fr"
+			/>
+			<Input
+				required
+				label="Sujet"
+				name="Sujet"
+				placeholder="Idée de collaboration"
+			/>
 			<Input label="Téléphone" placeholder="07 00 00 00 00" />
 			<Input
 				required
 				type="textarea"
 				rows="3"
 				label="Message"
+				name="Message"
 				placeholder="Hey, je voulais vous parler de mon projet..."
 			/>
 			<button
@@ -27,6 +47,7 @@
 			>
 				Envoyer
 			</button>
+			<input type="hidden" name="_next" value="/merci" />
 		</form>
 	</div>
 </template>

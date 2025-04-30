@@ -63,9 +63,9 @@
 
 		<h2>6. Cookies</h2>
 		<p>
-			Ce site utilise des cookies à des fins techniques et statistiques. Vous
-			pouvez configurer votre navigateur pour refuser les cookies ou être alerté
-			lorsque des cookies sont envoyés.
+			Ce site n'utilise pas de cookies. Vous pouvez tout de même configurer
+			votre navigateur pour refuser les cookies ou être alerté lorsque des
+			cookies sont envoyés.
 		</p>
 
 		<h2>7. Limitation de responsabilité</h2>

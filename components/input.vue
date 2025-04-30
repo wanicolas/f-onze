@@ -11,7 +11,7 @@
 			type="text"
 			:id="id"
 			:rows="type == 'textarea' ? 4 : null"
-			class="block w-full rounded-lg border-2 border-dark bg-transparent p-2.5 text-sm text-dark placeholder-gray-500 ring-dark focus:outline-none focus:ring-1 focus:ring-offset-0 dark:border-light dark:text-white dark:placeholder-gray-400 dark:ring-light"
+			class="block w-full rounded border-2 border-dark bg-transparent p-2.5 text-sm text-dark placeholder-gray-500 ring-dark focus:outline-none focus:ring-1 focus:ring-offset-0 dark:border-light dark:text-white dark:placeholder-gray-400 dark:ring-light"
 			:placeholder="placeholder"
 			:required="required"
 		/>
