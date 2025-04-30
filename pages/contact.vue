@@ -24,6 +24,8 @@
 			/>
 			<Input
 				required
+				type="email"
+				autocomplete="email"
 				label="Email"
 				name="email"
 				placeholder="jeandupont@mail.fr"
@@ -34,7 +36,12 @@
 				name="_subject"
 				placeholder="Idée de collaboration"
 			/>
-			<Input label="Téléphone" name="phone" placeholder="07 00 00 00 00" />
+			<Input
+				label="Téléphone"
+				type="tel"
+				name="phone"
+				placeholder="07 00 00 00 00"
+			/>
 			<Input
 				required
 				type="textarea"
