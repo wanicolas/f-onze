@@ -52,7 +52,7 @@
 			/>
 			<button
 				type="submit"
-				class="w-fit rounded-lg bg-accent px-4 py-1.5 font-accent !text-[1.7rem] font-medium !leading-7 text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-white"
+				class="w-fit rounded border border-accent px-2 font-accent !text-3xl text-accent hover:scale-105 focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-white"
 			>
 				Envoyer
 			</button>
