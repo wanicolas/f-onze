@@ -4,15 +4,15 @@
 	>
 		<div
 			aria-hidden="true"
-			class="pointer-events-none absolute z-[9999] -translate-x-1/2 -translate-y-1/2"
+			class="pointer-events-none fixed z-[9999] -translate-x-1/2 -translate-y-1/2"
 			:style="{ left: cursorPosition.x + 'px', top: cursorPosition.y + 'px' }"
 		>
 			<div
-				class="size-6 rounded-full bg-accent"
+				class="size-4 rounded-full bg-accent"
 				:class="showOpen && 'hidden'"
 			></div>
 			<div
-				class="font-accent !text-5xl text-accent"
+				class="font-accent !text-[2.5rem] text-accent"
 				:class="!showOpen && 'hidden'"
 			>
 				Ouvrir
@@ -182,6 +182,16 @@ onMounted(() => {
 		});
 	}
 });
+
+// When the url changes, emit cursor-left
+const route = useRoute();
+
+watch(
+	() => route.path,
+	() => {
+		showOpen.value = false;
+	},
+);
 </script>
 
 <style>
