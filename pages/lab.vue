@@ -1,5 +1,5 @@
 <template>
-	<div class="columns-4 gap-4">
+	<div class="columns-2 gap-4 sm:columns-3 lg:columns-4">
 		<img
 			v-for="(image, index) in imageFiles"
 			:key="index"
