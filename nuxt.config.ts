@@ -10,4 +10,7 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
 	css: ["~/assets/fonts.css"],
+	colorMode: {
+		preference: "dark",
+	},
 });
