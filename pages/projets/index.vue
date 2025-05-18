@@ -10,18 +10,18 @@
 			<NuxtLink
 				v-for="(project, index) in projects"
 				:key="index"
-				:to="'projets/' + project.name"
+				:to="'projets/' + project.title"
 				@mouseover="$emit('cursor-hovered')"
 				@mouseleave="$emit('cursor-left')"
 				class="group relative h-[25rem] overflow-hidden rounded"
 				:class="
 					shouldApplyTestClass(index)
-						? 'lg:col-span-2 lg:row-span-2 lg:h-[41rem]'
+						? 'col-span-1 row-span-1 lg:col-span-2 lg:row-span-2 lg:h-[41rem]'
 						: 'lg:h-80'
 				"
 			>
 				<img
-					:src="project.img"
+					:src="project.pictures[2]"
 					alt=""
 					loading="lazy"
 					class="size-full object-cover transition-all duration-500 group-hover:scale-110"
@@ -50,7 +50,7 @@
 <script setup>
 import projects from "~/assets/projects.json";
 
-defineEmits(["cursor-hovered", "cursor-left"]);
+const emit = defineEmits(["cursor-hovered", "cursor-left"]);
 
 function shouldApplyTestClass(index) {
 	const specialIndices = [0]; // Start with first element
