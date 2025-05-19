@@ -19,7 +19,7 @@
 			</div>
 		</div>
 
-		<header class="my-6 flex items-center justify-between md:my-8">
+		<header class="z-10 my-6 flex items-center justify-between md:my-8">
 			<NuxtLink to="/">
 				<span class="sr-only">Accueil</span>
 				<svg
@@ -95,7 +95,7 @@
 			/>
 		</main>
 
-		<footer class="my-6 md:my-8">
+		<footer v-if="route.path !== '/'" class="z-10 my-6 md:my-8">
 			<div
 				class="flex flex-col items-center gap-5 text-xl font-semibold md:mb-12 md:flex-row md:justify-between md:gap-7"
 			>
@@ -177,8 +177,8 @@ const showOpen = ref(false);
 onMounted(() => {
 	// Add an event listener for mousemove event
 	if (window.innerWidth > 1024) {
-		document.addEventListener("pointermove", (e) => {
-			cursorPosition.value = { x: e.pageX, y: e.pageY };
+		document.addEventListener("mousemove", (e) => {
+			cursorPosition.value = { x: e.clientX, y: e.clientY };
 		});
 	}
 });

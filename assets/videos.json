@@ -1,0 +1,17 @@
+[
+	{
+		"title": "Test vidéo",
+		"src": "flower",
+		"redirectToTitle": "Test vidéo 2"
+	},
+	{
+		"title": "Test vidéo 2",
+		"src": "sample",
+		"redirectToTitle": "Test vidéo 2"
+	},
+	{
+		"title": "Test vidéo 3",
+		"src": "bunny",
+		"redirectToTitle": "Test vidéo 2"
+	}
+]
