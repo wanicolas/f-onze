@@ -1,59 +1,57 @@
 <template>
 	<div class="mx-auto max-w-[120rem]">
-		<div>
-			<div class="flex flex-col justify-between gap-4 md:flex-row">
-				<h1 class="text-3xl font-semibold md:text-4xl">
-					{{ project.title }}
-				</h1>
-				<div class="flex gap-8">
-					<div>
-						<h2 class="font-accent text-accent">Client</h2>
-						<p>{{ project.client }}</p>
-					</div>
-					<div>
-						<h2 class="font-accent text-accent">Réalisateur</h2>
-						<p>{{ project.director }}</p>
-					</div>
+		<div class="mb-6 flex flex-col justify-between gap-4 md:flex-row">
+			<h1 class="text-3xl font-semibold md:text-4xl">
+				{{ project.title }}
+			</h1>
+			<div class="flex gap-8 text-right italic">
+				<div>
+					<h2 class="text-accent">Client</h2>
+					<p>{{ project.client }}</p>
+				</div>
+				<div>
+					<h2 class="text-accent">Réalisateur</h2>
+					<p>{{ project.director }}</p>
 				</div>
 			</div>
-			<div class="space-y-4">
-				<iframe
-					:src="project.videoUrl"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen
-					:title="'Vidéo : ' + project.title"
-					class="aspect-video h-full w-full"
-				></iframe>
-				<div class="flex w-full items-center gap-6">
-					<h2 class="text-xl">Galerie</h2>
-					<div
-						class="h-px w-full bg-gradient-to-r from-dark to-accent dark:from-white dark:to-accent"
-					/>
-				</div>
-				<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-					<img
-						class="aspect-video size-full rounded object-cover"
-						:src="project.pictures[0]"
-						alt=""
-					/>
-					<img
-						class="aspect-video size-full rounded object-cover"
-						:src="project.pictures[1]"
-						alt=""
-					/>
-				</div>
+		</div>
+		<div class="space-y-4">
+			<iframe
+				:src="project.videoUrl"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+				:title="'Vidéo : ' + project.title"
+				class="aspect-video h-full w-full"
+			></iframe>
+			<div class="flex w-full items-center gap-6">
+				<h2 class="text-xl">Galerie</h2>
+				<div
+					class="h-px w-full bg-gradient-to-r from-dark to-accent dark:from-white dark:to-accent"
+				/>
+			</div>
+			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 				<img
-					class="aspect-video w-full rounded object-cover"
-					:src="project.pictures[2]"
+					class="aspect-video size-full rounded object-cover"
+					:src="project.pictures[0]"
+					alt=""
+				/>
+				<img
+					class="aspect-video size-full rounded object-cover"
+					:src="project.pictures[1]"
 					alt=""
 				/>
 			</div>
-			<div
-				v-html="project.description"
-				class="prose mx-auto mt-20 text-sm dark:prose-invert md:text-lg"
-			></div>
+			<img
+				class="aspect-video w-full rounded object-cover"
+				:src="project.pictures[2]"
+				alt=""
+			/>
 		</div>
+		<div
+			v-html="project.description"
+			class="prose mx-auto mt-20 text-sm dark:prose-invert md:text-lg"
+		></div>
 	</div>
 </template>
 
