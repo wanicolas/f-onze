@@ -4,6 +4,9 @@ export default defineNuxtConfig({
 		rootAttrs: {
 			class: "min-h-dvh flex flex-col",
 		},
+		head: {
+			link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+		},
 		pageTransition: { name: "page", mode: "out-in" },
 	},
 	compatibilityDate: "2024-04-03",
