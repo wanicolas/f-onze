@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-auto max-w-[120rem]">
+	<div v-if="project" class="mx-auto max-w-[120rem]">
 		<div class="mb-6 flex flex-col justify-between gap-4 md:flex-row">
 			<h1 class="text-3xl font-semibold md:text-4xl">
 				{{ project.title }}
@@ -53,6 +53,7 @@
 			class="prose mx-auto mt-20 text-sm dark:prose-invert md:text-lg"
 		></div>
 	</div>
+	<div v-else>Ce projet ne semple pas exister...</div>
 </template>
 
 <script setup>
