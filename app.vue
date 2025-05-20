@@ -2,6 +2,15 @@
 	<Body
 		class="text-pretty bg-light px-4 text-dark md:px-12 dark:bg-dark dark:text-light"
 	>
+		<!-- a11y skip-to-content link -->
+		<a
+			class="absolute left-4 top-0 -translate-y-full focus:translate-y-0 focus:underline"
+			href="#main"
+		>
+			Aller au contenu</a
+		>
+
+		<!-- Custom cursors -->
 		<div
 			aria-hidden="true"
 			class="pointer-events-none fixed z-[9999] -translate-x-1/2 -translate-y-1/2"
@@ -122,7 +131,7 @@
 				</div>
 			</div>
 			<div
-				class="m-4 flex flex-col items-center gap-2 border-t border-dark pt-4 md:flex-row md:justify-between dark:border-light"
+				class="flex flex-col items-center gap-2 border-t border-dark pt-4 md:flex-row md:justify-between dark:border-light"
 			>
 				<div
 					class="flex flex-col items-center gap-1 md:flex-row-reverse md:gap-6"
