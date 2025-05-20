@@ -11,7 +11,12 @@
 			<strong>Adresse :</strong> Ynov campus Strasbourg, 16 rue de Leiceste, 67
 			000 Strasbourg
 		</p>
-		<p><strong>Email :</strong> f11communication.team@gmail.com</p>
+		<p>
+			<strong>Email :</strong>
+			<span class="font-semibold text-accent">
+				f11communication.team@gmail.com
+			</span>
+		</p>
 
 		<h2>2. Direction de la publication</h2>
 		<p>
@@ -58,7 +63,10 @@
 			Conformément à la loi, vous disposez d'un droit d'accès, de rectification,
 			de suppression et d'opposition concernant les données vous concernant.
 			Pour exercer ce droit, veuillez nous contacter par email à l'adresse
-			suivante : f11communication.team@gmail.com.
+			suivante :
+			<span class="font-semibold text-accent">
+				f11communication.team@gmail.com
+			</span>
 		</p>
 
 		<h2>6. Cookies</h2>
