@@ -59,6 +59,16 @@
 <script setup>
 import projects from "~/assets/projects.json";
 
+useHead({
+	title: "Projet spécifique - F/ONZE, association de production audiovisuelle",
+	meta: [
+		{
+			name: "description",
+			content: "Découvrez ce projet réalisé par F/ONZE.",
+		},
+	],
+});
+
 const route = useRoute();
 
 // get the project object inside the projects array knowing the title is in the url after "projets/"

@@ -16,7 +16,7 @@
 			method="POST"
 			class="flex-1"
 		>
-			<div class="space-y-4">
+			<div class="space-y-6">
 				<Input
 					required
 					label="Nom complet"
@@ -57,7 +57,7 @@
 
 			<button
 				type="submit"
-				class="mt-6 w-full rounded border border-accent px-2 font-accent !text-3xl text-accent hover:scale-105 focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-white"
+				class="mt-10 text-2xl font-semibold hover:scale-110"
 			>
 				Envoyer
 			</button>
@@ -78,3 +78,16 @@
 		</form>
 	</div>
 </template>
+
+<script setup>
+useHead({
+	title: "Contact - F/ONZE, association de production audiovisuelle",
+	meta: [
+		{
+			name: "description",
+			content:
+				"Contactez-nous pour discuter de vos projets audiovisuels et plus.",
+		},
+	],
+});
+</script>

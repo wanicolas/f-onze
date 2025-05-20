@@ -37,6 +37,17 @@
 <script setup>
 import videos from "~/assets/videos.json";
 
+useHead({
+	title: "F/ONZE, association de production audiovisuelle",
+	meta: [
+		{
+			name: "description",
+			content:
+				"F-ONZE est une association de production audiovisuelle qui explore les univers du digital, du sport et de l'humain.",
+		},
+	],
+});
+
 const videoToShow = ref(0);
 
 // Fonction pour gérer la fin d'une vidéo

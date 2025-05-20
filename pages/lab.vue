@@ -14,4 +14,14 @@
 <script setup>
 // import all images from /public/img/lab with Vite global import
 const imageFiles = import.meta.glob("/public/img/lab/**/*.avif");
+
+useHead({
+	title: "Lab - F/ONZE, association de production audiovisuelle",
+	meta: [
+		{
+			name: "description",
+			content: "Photos de nos différents projets et de leurs backstages.",
+		},
+	],
+});
 </script>

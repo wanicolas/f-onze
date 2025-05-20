@@ -48,4 +48,15 @@
 
 <script setup>
 import members from "~/assets/members.json";
+
+useHead({
+	title: "À propos - F/ONZE, association de production audiovisuelle",
+	meta: [
+		{
+			name: "description",
+			content:
+				"Vous-voulez en savoir plus sur nous ? Cette page est faites pour vous !",
+		},
+	],
+});
 </script>

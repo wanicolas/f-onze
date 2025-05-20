@@ -50,6 +50,17 @@
 <script setup>
 import projects from "~/assets/projects.json";
 
+useHead({
+	title: "Projets - F/ONZE, association de production audiovisuelle",
+	meta: [
+		{
+			name: "description",
+			content:
+				"Découvrez nos projets audiovisuels, de la production à la post-production, en passant par le tournage et le montage.",
+		},
+	],
+});
+
 const emit = defineEmits(["cursor-hovered", "cursor-left"]);
 
 function shouldApplyTestClass(index) {

@@ -25,9 +25,22 @@
 
 		<NuxtLink
 			to="/"
-			class="mx-auto mt-8 block w-fit rounded border border-dark px-10 py-1 text-dark hover:scale-105 dark:border-white dark:text-white"
+			class="mx-auto mt-8 block w-fit rounded border border-dark px-10 py-1 text-dark transition-all hover:bg-dark hover:text-white dark:border-white dark:text-white hover:dark:bg-light hover:dark:text-dark"
 		>
 			Retour à l'accueil
 		</NuxtLink>
 	</div>
 </template>
+
+<script setup>
+useHead({
+	title: "Formulaire envoyé - F/ONZE, association de production audiovisuelle",
+	meta: [
+		{
+			name: "description",
+			content:
+				"Merci d'avoir rempli le formulaire de contact. Nous avons bien reçu votre message et nous vous répondrons dès que possible.",
+		},
+	],
+});
+</script>

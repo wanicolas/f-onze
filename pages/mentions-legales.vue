@@ -93,3 +93,16 @@
 		</p>
 	</div>
 </template>
+
+<script setup>
+useHead({
+	title: "Mentions légales - F/ONZE, association de production audiovisuelle",
+	meta: [
+		{
+			name: "description",
+			content:
+				"Mentions légales de F/ONZE, association de production audiovisuelle.",
+		},
+	],
+});
+</script>
