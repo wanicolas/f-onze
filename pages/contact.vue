@@ -14,45 +14,50 @@
 		<form
 			action="https://formsubmit.co/d4044528eb35eb923ddf4d1b9c15ec09"
 			method="POST"
-			class="flex-1 space-y-3"
+			class="flex-1"
 		>
-			<Input
-				required
-				label="Nom complet"
-				name="name"
-				placeholder="Jean Dupont"
-			/>
-			<Input
-				required
-				type="email"
-				autocomplete="email"
-				label="Email"
-				name="email"
-				placeholder="jeandupont@mail.fr"
-			/>
-			<Input
-				required
-				label="Sujet"
-				name="_subject"
-				placeholder="Idée de collaboration"
-			/>
-			<Input
-				label="Téléphone"
-				type="tel"
-				name="phone"
-				placeholder="07 00 00 00 00"
-			/>
-			<Input
-				required
-				type="textarea"
-				rows="3"
-				label="Message"
-				name="message"
-				placeholder="Hey, je voulais vous parler de mon projet..."
-			/>
+			<div class="space-y-4">
+				<Input
+					required
+					label="Nom complet"
+					name="nom complet"
+					autocomplete="name"
+					placeholder="Jean Dupont"
+				/>
+				<Input
+					required
+					type="email"
+					label="Email"
+					name="email"
+					autocomplete="email"
+					placeholder="jeandupont@mail.fr"
+				/>
+				<Input
+					required
+					label="Sujet"
+					name="_subject"
+					placeholder="Idée de collaboration"
+				/>
+				<Input
+					label="Téléphone (optionnel)"
+					type="tel"
+					name="téléphone"
+					autocomplete="tel-national"
+					placeholder="07 00 00 00 00"
+				/>
+				<Input
+					required
+					type="textarea"
+					rows="3"
+					label="Message"
+					name="message"
+					placeholder="Hey, je voulais vous parler de mon projet..."
+				/>
+			</div>
+
 			<button
 				type="submit"
-				class="w-fit rounded border border-accent px-2 font-accent !text-3xl text-accent hover:scale-105 focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-white"
+				class="mt-6 w-full rounded border border-accent px-2 font-accent !text-3xl text-accent hover:scale-105 focus:outline-none focus:ring-2 focus:ring-dark dark:focus:ring-white"
 			>
 				Envoyer
 			</button>
