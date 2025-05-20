@@ -116,18 +116,24 @@
 					cause ?
 				</NuxtLink>
 				<div class="flex flex-col items-center gap-1">
-					<NuxtLink to="https://www.instagram.com/f11.prod/">
+					<NuxtLink target="_blank" to="https://www.instagram.com/f11.prod/">
 						Instagram
 					</NuxtLink>
 					<NuxtLink
+						target="_blank"
 						to="https://www.youtube.com/channel/UCxBTaRCwMFDKCuQxPpCKgPQ"
 					>
 						Youtube
 					</NuxtLink>
-					<NuxtLink to="https://www.linkedin.com/in/f-onze-prod-848992339/">
+					<NuxtLink
+						target="_blank"
+						to="https://www.linkedin.com/in/f-onze-prod-848992339/"
+					>
 						Linkedin
 					</NuxtLink>
-					<NuxtLink to="https://www.tiktok.com/@f11.prod">Tiktok</NuxtLink>
+					<NuxtLink target="_blank" to="https://www.tiktok.com/@f11.prod"
+						>Tiktok</NuxtLink
+					>
 				</div>
 			</div>
 			<div
