@@ -1,11 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	app: {
+		head: {
+			htmlAttrs: {
+				lang: "fr",
+			},
+			link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+		},
 		rootAttrs: {
 			class: "min-h-dvh flex flex-col",
-		},
-		head: {
-			link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
 		},
 		pageTransition: { name: "page", mode: "out-in" },
 	},
