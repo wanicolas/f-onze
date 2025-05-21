@@ -1,5 +1,5 @@
 <template>
-	<div class="prose max-w-5xl dark:prose-invert">
+	<div class="prose mx-auto max-w-5xl dark:prose-invert">
 		<h1>Mentions légales</h1>
 
 		<h2>1. Présentation de l'association</h2>
