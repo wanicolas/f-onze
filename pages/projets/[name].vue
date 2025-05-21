@@ -17,7 +17,7 @@
 		</div>
 		<div class="space-y-4">
 			<iframe
-				:src="project.videoUrl"
+				:src="'https://www.youtube.com/embed/' + project.videoUrl"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				referrerpolicy="strict-origin-when-cross-origin"
 				allowfullscreen
@@ -33,24 +33,24 @@
 			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 				<img
 					class="aspect-video size-full rounded object-cover"
-					:src="project.pictures[0]"
+					:src="'/img/projects/' + project.pictures[0]"
 					alt=""
 				/>
 				<img
 					class="aspect-video size-full rounded object-cover"
-					:src="project.pictures[1]"
+					:src="'/img/projects/' + project.pictures[1]"
 					alt=""
 				/>
 			</div>
 			<img
 				class="aspect-video w-full rounded object-cover"
-				:src="project.pictures[2]"
+				:src="'/img/projects/' + project.pictures[2]"
 				alt=""
 			/>
 		</div>
 		<div
 			v-html="project.description"
-			class="prose mx-auto mt-20 text-sm dark:prose-invert md:text-lg"
+			class="prose mx-auto mt-20 text-center text-sm dark:prose-invert md:text-lg"
 		></div>
 	</div>
 	<div v-else>Ce projet ne semple pas exister...</div>

@@ -21,7 +21,7 @@
 				"
 			>
 				<img
-					:src="project.pictures[2]"
+					:src="'/img/projects/' + project.pictures[0]"
 					alt=""
 					loading="lazy"
 					class="size-full object-cover transition-all duration-500 group-hover:scale-110"
