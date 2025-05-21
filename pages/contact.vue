@@ -81,7 +81,7 @@
 
 <script setup>
 useHead({
-	title: "Contact - F/ONZE, association de production audiovisuelle",
+	title: "Contact - F/ONZE, collectif de production audiovisuelle",
 	meta: [
 		{
 			name: "description",

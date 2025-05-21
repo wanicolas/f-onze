@@ -60,7 +60,7 @@
 import projects from "~/assets/projects.json";
 
 useHead({
-	title: "Projet spécifique - F/ONZE, association de production audiovisuelle",
+	title: "Projet spécifique - F/ONZE, collectif de production audiovisuelle",
 	meta: [
 		{
 			name: "description",

@@ -34,7 +34,7 @@
 
 <script setup>
 useHead({
-	title: "Formulaire envoyé - F/ONZE, association de production audiovisuelle",
+	title: "Formulaire envoyé - F/ONZE, collectif de production audiovisuelle",
 	meta: [
 		{
 			name: "description",

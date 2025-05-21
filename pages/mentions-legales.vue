@@ -96,12 +96,12 @@
 
 <script setup>
 useHead({
-	title: "Mentions légales - F/ONZE, association de production audiovisuelle",
+	title: "Mentions légales - F/ONZE, collectif de production audiovisuelle",
 	meta: [
 		{
 			name: "description",
 			content:
-				"Mentions légales de F/ONZE, association de production audiovisuelle.",
+				"Mentions légales de F/ONZE, collectif de production audiovisuelle.",
 		},
 	],
 });

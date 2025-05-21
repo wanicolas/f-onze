@@ -51,7 +51,7 @@
 import projects from "~/assets/projects.json";
 
 useHead({
-	title: "Projets - F/ONZE, association de production audiovisuelle",
+	title: "Projets - F/ONZE, collectif de production audiovisuelle",
 	meta: [
 		{
 			name: "description",

@@ -1,7 +1,7 @@
 <template>
 	<div class="mx-auto max-w-5xl">
 		<h1 class="mb-5 text-2xl font-semibold md:text-3xl">
-			Association de production
+			Collectif de production
 			<span class="font-accent text-accent">audiovisuelle</span>
 		</h1>
 		<p class="mb-20 text-lg md:text-xl">
@@ -50,7 +50,7 @@
 import members from "~/assets/members.json";
 
 useHead({
-	title: "À propos - F/ONZE, association de production audiovisuelle",
+	title: "À propos - F/ONZE, collectif de production audiovisuelle",
 	meta: [
 		{
 			name: "description",

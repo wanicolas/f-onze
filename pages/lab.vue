@@ -16,7 +16,7 @@
 const imageFiles = import.meta.glob("/public/img/lab/**/*.avif");
 
 useHead({
-	title: "Lab - F/ONZE, association de production audiovisuelle",
+	title: "Lab - F/ONZE, collectif de production audiovisuelle",
 	meta: [
 		{
 			name: "description",

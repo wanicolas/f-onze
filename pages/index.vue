@@ -1,7 +1,9 @@
 <template>
 	<div>
-		<h1 class="relative z-10 -mt-10 text-center font-light md:-mt-20">
-			Association de production
+		<h1
+			class="relative z-10 mx-auto -mt-10 w-fit rounded px-2 text-center font-light drop-shadow-2xl md:-mt-20"
+		>
+			Collectif de production
 			<span class="font-accent">audiovisuelle</span>. Traversons les univers du
 			digital.
 		</h1>
@@ -43,12 +45,12 @@
 import videos from "~/assets/videos.json";
 
 useHead({
-	title: "F/ONZE, association de production audiovisuelle",
+	title: "F/ONZE, collectif de production audiovisuelle",
 	meta: [
 		{
 			name: "description",
 			content:
-				"F-ONZE est une association de production audiovisuelle qui explore les univers du digital, du sport et de l'humain.",
+				"F-ONZE est une collectif de production audiovisuelle qui explore les univers du digital, du sport et de l'humain.",
 		},
 	],
 });
