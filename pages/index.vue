@@ -12,13 +12,15 @@
 				{{ videos[videoToShow].title }}
 			</NuxtLink>
 			<div class="flex justify-between gap-4">
-				<div
+				<button
 					v-for="(video, index) in videos"
 					:key="index"
 					@click="playVideo(index)"
-					class="h-16 w-1 rounded md:h-1 md:w-28"
+					class="h-12 w-1 rounded md:h-1 md:w-20"
 					:class="index === videoToShow ? 'bg-accent' : 'bg-accent/40'"
-				></div>
+				>
+					<span class="sr-only">Afficher la vidéo n°{{ index + 1 }}</span>
+				</button>
 			</div>
 		</div>
 		<video
@@ -29,7 +31,10 @@
 			:class="index !== videoToShow && 'hidden'"
 			:id="'video' + index"
 		>
-			<source :src="'/videos/' + video.src + '.webm'" type="video/webm" />
+			<source
+				:src="'/videos/' + video.src"
+				:type="'video/' + video.src.split('.').pop()"
+			/>
 		</video>
 	</div>
 </template>
