@@ -106,7 +106,7 @@
 
 		<footer v-if="route.path !== '/'" class="z-10 my-6 md:my-8">
 			<div
-				class="flex flex-col items-center gap-5 text-xl font-semibold md:mb-12 md:flex-row md:justify-between md:gap-7"
+				class="mb-4 flex flex-col items-center gap-5 text-xl font-semibold md:mb-12 md:flex-row md:justify-between md:gap-7"
 			>
 				<NuxtLink
 					to="/contact"
