@@ -5,8 +5,18 @@
 		"redirectToTitle": "Patience"
 	},
 	{
+		"title": "Autre Terre",
+		"src": "autre-terre-1.mp4",
+		"redirectToTitle": "Autre Terre"
+	},
+	{
 		"title": "Patience",
 		"src": "patience-2.mp4",
 		"redirectToTitle": "Patience"
+	},
+	{
+		"title": "Autre Terre",
+		"src": "autre-terre-2.mp4",
+		"redirectToTitle": "Autre Terre"
 	}
 ]
